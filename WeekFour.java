@@ -33,38 +33,41 @@ public class WeekFour {
 			i++;
 		}
 		
-//		for(int getid : ids) {
-//			//String getEmployeeName = employeeNames.get(getid-1);
-//			//System.out.println(getEmployeeName);
-//			employeeMap.put(getid, getEmployeeName);	
-//		}
+		//6
+		for(int getid : ids) {
+			String getEmployeeName = employeeNames.get(getid-1);	
+			employeeMap.put(getid, getEmployeeName);	
+		}
 		
 		
-//		for(int employeeId : employeeMap.keySet()) {
-//			System.out.println(employeeId +": "+ employeeMap.get(employeeId));
-//			
-//		}
+		for(int employeeId : employeeMap.keySet()) {
+			System.out.println(employeeId +": "+ employeeMap.get(employeeId));
+			
+		}
 		
-//		StringBuilder idsBuilder = null;
-//		for(int getStringBld : employeeMap.keySet()) {
-//			idsBuilder = new StringBuilder(getStringBld+"-");
-//			System.out.print(idsBuilder.toString());
-//		}
-//		
-//		StringBuilder nameBuilder = null;
-//		for(String getName : employeeNames) {
-//			nameBuilder = new StringBuilder(getName+" ");
-//			System.out.print(nameBuilder.toString());
-//			
-//		}
+		//7 - 9
+		StringBuilder idsBuilder = null;
+		for(int getStringBld : employeeMap.keySet()) {
+			idsBuilder = new StringBuilder(getStringBld+"-");
+			System.out.print(idsBuilder.toString());
+		}
 		
-		//add the numbers and names with a dash
-//		StringBuilder idsBuilderTwo = null;
-//		for(int getStringBld : employeeMap.keySet()) {
-//			idsBuilderTwo = new StringBuilder(getStringBld+"-");
-//			idsBuilderTwo.append(employeeMap.get(getStringBld));
-//			System.out.println(idsBuilderTwo.toString());
-//		}	
+		//10 - 12
+		StringBuilder nameBuilder = null;
+		for(String getName : employeeNames) {
+			nameBuilder = new StringBuilder(getName+" ");
+			System.out.print(nameBuilder.toString());
+			
+		}
+		
+		System.out.println("\n----------------------------------");
+		//puts everything together
+		StringBuilder idsBuilderTwo = null;
+		for(int getStringBld : employeeMap.keySet()) {
+			idsBuilderTwo = new StringBuilder(getStringBld+"-");
+			idsBuilderTwo.append(employeeMap.get(getStringBld));
+			System.out.println(idsBuilderTwo.toString());
+		}	
 		
 
 	}
